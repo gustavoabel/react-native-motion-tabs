@@ -1,4 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 import { BottomTab } from '../components/BottomTab/BottomTab';
 import type { MotionTabsConfig, TabRoute } from '../types';
 
@@ -10,7 +11,7 @@ export function createMotionTabs({ tabs, style, options }: MotionTabsConfig) {
       (acc, tab) => {
         acc[tab.name] = {
           name: tab.name,
-          icon: tab.icon || 'circle', // Default icon
+          icon: tab.icon || 'circle',
           iconType: tab.iconType || 'Ionicons',
         };
         return acc;

@@ -9,6 +9,7 @@ UnistylesRegistry.addThemes({ light: defaultTheme });
 UnistylesRegistry.addConfig({ initialTheme: undefined });
 
 function ExampleScreen() {
+  // eslint-disable-next-line react-native/no-inline-styles
   return <View style={{ flex: 1, backgroundColor: 'white' }} />;
 }
 

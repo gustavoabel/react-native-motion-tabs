@@ -1,14 +1,17 @@
 import { useState } from 'react';
 import { View, type LayoutChangeEvent } from 'react-native';
+
 import { useStyles } from 'react-native-unistyles';
 import type { BottomTabBarProps } from '@react-navigation/bottom-tabs';
+
 import Animated, {
   useSharedValue,
   withSpring,
   useAnimatedStyle,
 } from 'react-native-reanimated';
-import { BottomTabButton } from '../BottomTabButton/BottomTabButton';
+
 import { isAndroid } from '@config/platform';
+import { BottomTabButton } from '../BottomTabButton/BottomTabButton';
 import { stylesheet } from './styles';
 import { defaultTheme } from '../../types';
 

@@ -1,4 +1,5 @@
 import type { ComponentType } from 'react';
+
 import type { BottomTabNavigationOptions } from '@react-navigation/bottom-tabs';
 
 export type TabConfig = {

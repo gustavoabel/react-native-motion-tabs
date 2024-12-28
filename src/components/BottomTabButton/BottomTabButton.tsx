@@ -1,15 +1,18 @@
 import { useEffect } from 'react';
 import { Pressable } from 'react-native';
+
 import { useStyles } from 'react-native-unistyles';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
 import Animated, {
   useSharedValue,
   withSpring,
   useAnimatedStyle,
   interpolate,
 } from 'react-native-reanimated';
+
 import type { TabRoute, TabTheme } from '../../types';
 import { stylesheet } from './styles';
 
