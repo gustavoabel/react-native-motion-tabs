@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
     "rootDir": ".",
+    "baseUrl": ".",
     "paths": {
-      "react-native-motion-tabs": ["./src/index"]
+      "react-native-motion-tabs": ["./src/index"],
+      "@components/*": ["src/components/*"],
+      "@navigation/*": ["src/navigation/*"],
+      "@config/*": ["src/config/*"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

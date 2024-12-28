@@ -1,3 +1,2 @@
-export function multiply(a: number, b: number): number {
-  return a * b;
-}
+export { createMotionTabs } from './navigation/createMotionTabs';
+export type { MotionTabsConfig, TabConfig, StyleConfig } from './types';
