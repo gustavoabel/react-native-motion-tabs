@@ -36,7 +36,7 @@ yarn add @react-navigation/native @react-navigation/bottom-tabs react-native-rea
 import { createMotionTabs } from 'react-native-motion-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 
-function HomeScreen() {
+function ExampleScreen() {
   return <View style={{flex: 1}} />;
 }
 
@@ -44,22 +44,35 @@ const Tabs = createMotionTabs({
   tabs: [
     {
       name: 'Home',
-      component: HomeScreen,
+      component: ExampleScreen,
       icon: 'home',
-      iconType: 'Ionicons'
+      iconType: 'Ionicons',
+    },
+    {
+      name: 'Search',
+      component: ExampleScreen,
+      icon: 'search',
+      iconType: 'Ionicons',
+    },
+    {
+      name: 'Favorites',
+      component: ExampleScreen,
+      icon: 'heart',
+      iconType: 'Ionicons',
     },
     {
       name: 'Profile',
-      component: ProfileScreen,
+      component: ExampleScreen,
       icon: 'person',
-      iconType: 'Ionicons'
-    }
+      iconType: 'Ionicons',
+    },
   ],
   style: {
-    activeColor: '#FFFFFF',
-    inactiveColor: '#000000',
-    backgroundColor: '#FF0000'
-  }
+    activeButton: '#EF7E06',
+    activeText: '#FFFFFF',
+    inactiveText: '#000000',
+    backgroundColor: '#FFFFFF',
+  },
 });
 
 export default function App() {
@@ -71,9 +84,7 @@ export default function App() {
 }
 ```
 
-## Customization
-
-### theme options
+## Theme options
 
 ```typescript
 type TabTheme = {
