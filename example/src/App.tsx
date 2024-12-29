@@ -40,6 +40,12 @@ const Tabs = createMotionTabs({
       iconType: 'Ionicons',
     },
   ],
+  style: {
+    activeButton: '#EF7E06',
+    activeText: '#FFFFFF',
+    inactiveText: '#000000',
+    backgroundColor: '#FFFFFF',
+  },
 });
 
 export default function App() {

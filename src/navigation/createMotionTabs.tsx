@@ -27,7 +27,7 @@ export function createMotionTabs({ tabs, style, options }: MotionTabsConfig) {
         }}
         // eslint-disable-next-line react/no-unstable-nested-components
         tabBar={(props: any) => (
-          <BottomTab {...props} style={style} tabsConfig={tabsConfig} />
+          <BottomTab {...props} theme={style} tabsConfig={tabsConfig} />
         )}
       >
         {tabs.map(({ name, component }) => (

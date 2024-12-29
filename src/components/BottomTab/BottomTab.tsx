@@ -13,7 +13,7 @@ import Animated, {
 import { isAndroid } from '@config/platform';
 import { BottomTabButton } from '../BottomTabButton/BottomTabButton';
 import { stylesheet } from './styles';
-import { defaultTheme } from '../../types';
+import { defaultTheme, type StyleConfig } from '../../types';
 
 type DimensionsProps = {
   height: number;
@@ -25,7 +25,8 @@ export const BottomTab = ({
   descriptors,
   navigation,
   tabsConfig,
-}: BottomTabBarProps & {
+  theme,
+}: BottomTabBarProps & { theme: StyleConfig } & {
   tabsConfig: Record<string, { icon: string; iconType: string }>;
 }) => {
   const [dimensions, setDimensions] = useState<DimensionsProps>({
@@ -51,7 +52,10 @@ export const BottomTab = ({
   };
 
   return (
-    <View onLayout={onBottomTabLayout} style={styles.container}>
+    <View
+      onLayout={onBottomTabLayout}
+      style={[styles.container, { backgroundColor: theme?.backgroundColor }]}
+    >
       <Animated.View
         style={[
           animatedStyle,
@@ -59,6 +63,7 @@ export const BottomTab = ({
           {
             height: dimensions.height - (isAndroid ? 20 : 10),
             width: buttonWidth - 25,
+            backgroundColor: theme?.activeButton,
           },
         ]}
       />
@@ -108,7 +113,7 @@ export const BottomTab = ({
                 name: route.name,
                 ...tabsConfig[route.name],
               }}
-              theme={defaultTheme}
+              theme={theme || defaultTheme}
               label={label}
             />
           );

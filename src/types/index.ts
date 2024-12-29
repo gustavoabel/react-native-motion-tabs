@@ -10,12 +10,23 @@ export type TabConfig = {
 };
 
 export type StyleConfig = {
+  activeText?: string;
+  inactiveText?: string;
+  activeButton?: string;
   backgroundColor?: string;
-  activeColor?: string;
-  inactiveColor?: string;
   shadowColor?: string;
   tabBarHeight?: number;
   marginHorizontal?: number;
+};
+
+export const defaultTheme: StyleConfig = {
+  activeText: '#FFFFFF',
+  inactiveText: '#000000',
+  activeButton: '#FFFFFF',
+  backgroundColor: '#FFFFFF',
+  shadowColor: '#000000',
+  tabBarHeight: 60,
+  marginHorizontal: 40,
 };
 
 export type MotionTabsConfig = {
@@ -30,29 +41,11 @@ export type TabRoute = {
   iconType?: string;
 };
 
-export type TabTheme = {
-  activeColor?: string;
-  inactiveColor?: string;
-  backgroundColor?: string;
-  shadowColor?: string;
-  tabBarHeight?: number;
-  marginHorizontal?: number;
-};
-
 export type BottomTabButtonProps = {
   onPress: () => void;
   onLongPress: () => void;
   isFocused: boolean;
   route: TabRoute;
-  theme: TabTheme;
+  theme: StyleConfig;
   label: string;
-};
-
-export const defaultTheme: TabTheme = {
-  activeColor: '#FFFFFF',
-  inactiveColor: '#000000',
-  backgroundColor: '#FFFFFF',
-  shadowColor: '#000000',
-  tabBarHeight: 60,
-  marginHorizontal: 40,
 };

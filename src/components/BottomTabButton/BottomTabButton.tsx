@@ -13,7 +13,7 @@ import Animated, {
   interpolate,
 } from 'react-native-reanimated';
 
-import type { TabRoute, TabTheme } from '../../types';
+import type { TabRoute, StyleConfig } from '../../types';
 import { stylesheet } from './styles';
 
 type Props = {
@@ -21,7 +21,7 @@ type Props = {
   onLongPress: () => void;
   isFocused: boolean;
   route: TabRoute;
-  theme: TabTheme;
+  theme: StyleConfig;
   label: string;
 };
 
@@ -43,7 +43,7 @@ export const BottomTabButton = ({
           <Entypo
             name={route.icon || 'home'}
             size={24}
-            color={isFocused ? theme.activeColor : theme.inactiveColor}
+            color={isFocused ? theme.activeText : theme.inactiveText}
           />
         );
       case 'MaterialIcons':
@@ -51,7 +51,7 @@ export const BottomTabButton = ({
           <MaterialIcons
             name={route.icon || 'home'}
             size={24}
-            color={isFocused ? theme.activeColor : theme.inactiveColor}
+            color={isFocused ? theme.activeText : theme.inactiveText}
           />
         );
       default:
@@ -59,7 +59,7 @@ export const BottomTabButton = ({
           <Ionicons
             name={route.icon || 'home'}
             size={24}
-            color={isFocused ? theme.activeColor : theme.inactiveColor}
+            color={isFocused ? theme.activeText : theme.inactiveText}
           />
         );
     }
@@ -98,7 +98,7 @@ export const BottomTabButton = ({
         style={[
           animatedTextStyle,
           styles.text,
-          { color: isFocused ? theme.activeColor : theme.inactiveColor },
+          { color: isFocused ? theme.activeText : theme.inactiveText },
         ]}
       >
         {label}
