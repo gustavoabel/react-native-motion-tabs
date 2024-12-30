@@ -1,6 +1,6 @@
 ![🎨 react-native-motion-tabs](https://github.com/user-attachments/assets/34281713-08f3-4b82-ad10-9dcef10c9890)
 
-#### A lightweight, highly customizable bottom tabs navigator for React Native that brings life to your navigation with smooth, fluid animations. Built on top of React Navigation, it combines elegant transitions, rich icon support, and an intuitive API to create beautiful tab bars that enhance user experience.
+A lightweight, highly customizable bottom tabs navigator for React Native that brings life to your navigation with smooth, fluid animations. Built on top of React Navigation, it combines elegant transitions, rich icon support, and an intuitive API to create beautiful tab bars that enhance user experience.
 
 Perfect for apps that want to:
 
