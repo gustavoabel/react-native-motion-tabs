@@ -82,6 +82,10 @@ export default function App() {
 }
 ```
 
+## Meowtive
+
+To see MotionTabs in action, check out [Meowtive](https://github.com/meowtive/meowtive)!
+
 ## Theme options
 
 ```typescript
