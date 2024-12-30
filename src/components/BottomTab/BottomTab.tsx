@@ -10,10 +10,10 @@ import Animated, {
   useAnimatedStyle,
 } from 'react-native-reanimated';
 
-import { isAndroid } from '@config';
-import { BottomTabButton } from '@components';
+import { isAndroid } from '../../config/platform';
+import { BottomTabButton } from '../BottomTabButton/BottomTabButton';
 import { stylesheet } from './styles';
-import { defaultTheme, type StyleConfig } from '@types';
+import { defaultTheme, type StyleConfig } from '../../types';
 
 type DimensionsProps = {
   height: number;
