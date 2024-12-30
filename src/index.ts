@@ -1,1 +1,0 @@
-export { createMotionTabs } from '@navigation';
