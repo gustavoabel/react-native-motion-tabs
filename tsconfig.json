@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "lib/typescript",
-    "outDir": "lib/typescript",
+    "declarationDir": "lib/typescript/src",
+    "outDir": "lib/typescript/src",
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
