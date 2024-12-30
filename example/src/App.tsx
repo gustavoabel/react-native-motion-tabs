@@ -1,8 +1,7 @@
 import { View } from 'react-native';
 
 import { UnistylesRegistry } from 'react-native-unistyles';
-import { defaultTheme } from 'react-native-motion-tabs';
-import { createMotionTabs } from 'react-native-motion-tabs';
+import { defaultTheme, createMotionTabs } from 'react-native-motion-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 
 UnistylesRegistry.addThemes({ light: defaultTheme });
