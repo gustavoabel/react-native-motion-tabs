@@ -1,1 +1,1 @@
-export { createMotionTabs } from '@navigation';
+export { createMotionTabs } from './navigation';
