@@ -13,7 +13,7 @@ import Animated, {
   interpolate,
 } from 'react-native-reanimated';
 
-import type { TabRoute, StyleConfig } from '../../types';
+import type { TabRoute, StyleConfig } from '@types';
 import { stylesheet } from './styles';
 
 type Props = {

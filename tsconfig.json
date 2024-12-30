@@ -7,9 +7,10 @@
     "baseUrl": ".",
     "paths": {
       "react-native-motion-tabs": ["./src/index"],
-      "@components/*": ["src/components/*"],
-      "@navigation/*": ["src/navigation/*"],
-      "@config/*": ["src/config/*"]
+      "@components": ["src/components"],
+      "@navigation": ["src/navigation"],
+      "@config": ["src/config"],
+      "@types": ["src/types"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

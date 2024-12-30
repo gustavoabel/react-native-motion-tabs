@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { BottomTab } from '../components/BottomTab/BottomTab';
-import type { MotionTabsConfig, TabRoute } from '../types';
+import { BottomTab } from '@components';
+import type { MotionTabsConfig, TabRoute } from '@types';
 
 const Tab = createBottomTabNavigator();
 

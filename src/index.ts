@@ -1,12 +1,12 @@
 // Export components
-export { BottomTab } from './components/BottomTab/BottomTab';
-export { BottomTabButton } from './components/BottomTabButton/BottomTabButton';
+export { BottomTab } from '@components';
+export { BottomTabButton } from '@components';
 
-export { stylesheet as bottomTabStyles } from './components/BottomTab/styles';
-export { stylesheet as bottomTabButtonStyles } from './components/BottomTabButton/styles';
+export { bottomTabStyles } from '@components';
+export { bottomTabButtonStyles } from '@components';
 
-export type { BottomTabButtonProps } from './types';
+export type { BottomTabButtonProps } from '@types';
 
-export { createMotionTabs } from './navigation/createMotionTabs';
+export { createMotionTabs } from '@navigation';
 
-export { defaultTheme } from './types';
+export { defaultTheme } from '@types';

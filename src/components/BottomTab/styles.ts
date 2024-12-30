@@ -1,6 +1,6 @@
 import { createStyleSheet } from 'react-native-unistyles';
 
-import { defaultTheme, type StyleConfig } from '../../types';
+import { defaultTheme, type StyleConfig } from '@types';
 
 export const stylesheet = createStyleSheet((theme: StyleConfig) => ({
   container: {
