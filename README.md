@@ -31,7 +31,7 @@ yarn add react-native-motion-tabs
 yarn add @react-navigation/native @react-navigation/bottom-tabs
 
 # React Native dependencies
-yarn add react-native-reanimated react-native-vector-icons react-native-screens react-native-safe-area-context
+yarn add react-native-reanimated react-native-vector-icons react-native-screens react-native-safe-area-context react-native-gesture-handler
 ```
 
 ### 2. Babel Configuration
@@ -94,7 +94,6 @@ Add the following block of code just before the final closing `</dict>` tag in y
   <string>Octicons.ttf</string>
   <string>Zocial.ttf</string>
 </array>
-</dict>
 ```
 
 > This ensures the font configurations are part of your app's main configuration dictionary, allowing iOS to properly load the vector icon fonts.
