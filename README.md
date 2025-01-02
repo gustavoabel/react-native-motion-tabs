@@ -68,7 +68,7 @@ module.exports = {
 Add the following line just before the final `end` clause in your `Podfile`:
 
 ```ruby
-pod 'RNVectorIcons', :path => './node_modules/react-native-vector-icons'
+pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 ```
 
 > Placing it before the final end ensures it's part of the target configuration, integrating the vector icons with your project's build process.
