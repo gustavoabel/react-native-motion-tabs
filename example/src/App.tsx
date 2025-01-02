@@ -1,11 +1,7 @@
 import { View } from 'react-native';
 
-import { UnistylesRegistry } from 'react-native-unistyles';
 import { createMotionTabs } from 'react-native-motion-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-
-UnistylesRegistry.addThemes({ light: undefined });
-UnistylesRegistry.addConfig({ initialTheme: undefined });
 
 function ExampleScreen() {
   // eslint-disable-next-line react-native/no-inline-styles

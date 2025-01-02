@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
-import { Pressable } from 'react-native';
+import { Pressable, StyleSheet } from 'react-native';
 
-import { useStyles } from 'react-native-unistyles';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -33,7 +32,6 @@ export const BottomTabButton = ({
   theme,
   label,
 }: Props) => {
-  const { styles } = useStyles(stylesheet);
   const scale = useSharedValue(0);
 
   const getIcon = () => {
@@ -86,21 +84,18 @@ export const BottomTabButton = ({
     );
   }, [scale, isFocused]);
 
+  const buttonStyle = StyleSheet.flatten([stylesheet.button]);
+
+  const textStyle = StyleSheet.flatten([
+    stylesheet.text,
+    { color: isFocused ? theme.activeText : theme.inactiveText },
+  ]);
+
   return (
-    <Pressable
-      onPress={onPress}
-      onLongPress={onLongPress}
-      style={styles.button}
-    >
+    <Pressable onPress={onPress} onLongPress={onLongPress} style={buttonStyle}>
       <Animated.View style={animatedIconStyle}>{getIcon()}</Animated.View>
 
-      <Animated.Text
-        style={[
-          animatedTextStyle,
-          styles.text,
-          { color: isFocused ? theme.activeText : theme.inactiveText },
-        ]}
-      >
+      <Animated.Text style={[animatedTextStyle, textStyle]}>
         {label}
       </Animated.Text>
     </Pressable>

@@ -1,16 +1,13 @@
-import { createStyleSheet } from 'react-native-unistyles';
+import { StyleSheet } from 'react-native';
 
-import { defaultTheme, type StyleConfig } from '../../types';
-
-export const stylesheet = createStyleSheet((theme: StyleConfig) => ({
+export const stylesheet = StyleSheet.create({
   container: {
     flexDirection: 'row',
     position: 'absolute',
     bottom: 50,
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: theme?.backgroundColor || defaultTheme.backgroundColor,
-    marginHorizontal: theme?.marginHorizontal || 40,
+    marginHorizontal: 40,
     paddingVertical: 15,
     borderRadius: 35,
     shadowColor: '#000000',
@@ -27,6 +24,5 @@ export const stylesheet = createStyleSheet((theme: StyleConfig) => ({
     shadowOffset: { width: 0, height: 0 },
     shadowRadius: 10,
     shadowOpacity: 0.15,
-    backgroundColor: theme?.activeButton || defaultTheme.activeButton,
   },
-}));
+});

@@ -1,11 +1,13 @@
-import { createStyleSheet } from 'react-native-unistyles';
+import { StyleSheet } from 'react-native';
 
-export const stylesheet = createStyleSheet({
+export const stylesheet = StyleSheet.create({
   button: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    gap: 3,
   },
-  text: { fontSize: 12 },
+  text: {
+    fontSize: 12,
+    marginTop: 3,
+  },
 });
