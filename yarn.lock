@@ -11932,7 +11932,6 @@ __metadata:
     react-native-reanimated: ^3.16.6
     react-native-safe-area-context: 4.12.0
     react-native-screens: ^4.4.0
-    react-native-unistyles: ^2.20.0
     react-native-vector-icons: ^10.2.0
     react-native-web: ~0.19.13
   languageName: unknown
@@ -11962,7 +11961,6 @@ __metadata:
     react-native: 0.76.5
     react-native-builder-bob: ^0.35.2
     react-native-reanimated: ^3.16.6
-    react-native-unistyles: 2.0.0
     react-native-vector-icons: ^10.2.0
     release-it: ^17.10.0
     typescript: ^5.2.2
@@ -11974,7 +11972,6 @@ __metadata:
     react-native-reanimated: ^3.0.0
     react-native-safe-area-context: 4.12.0
     react-native-screens: ^3.0.0
-    react-native-unistyles: ^2.0.0
     react-native-vector-icons: ^10.0.0
   languageName: unknown
   linkType: soft
@@ -12022,45 +12019,6 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 6e90539e8eb79ba4b3fd23f6c27b943e3595c9c275b3002e6b376eb0a1c17521bde9b05d0b2c4c7ab67042f20bdbec87c3d1e3d182a531b7e3115a2dace0e912
-  languageName: node
-  linkType: hard
-
-"react-native-unistyles@npm:2.0.0":
-  version: 2.0.0
-  resolution: "react-native-unistyles@npm:2.0.0"
-  peerDependencies:
-    "@react-native/normalize-colors": "*"
-    react: "*"
-    react-native: "*"
-    react-native-macos: "*"
-    react-native-web: "*"
-  peerDependenciesMeta:
-    react-native-macos:
-      optional: true
-    react-native-web:
-      optional: true
-  checksum: 0b5fa4b00162fda85116f74c25528414b16cc2acdf9ba16f6d741764aff183ebff62b5f0cbba868708f1ca5f0377a2b38705baf691793473c8f96a26d0070a7e
-  languageName: node
-  linkType: hard
-
-"react-native-unistyles@npm:^2.20.0":
-  version: 2.20.0
-  resolution: "react-native-unistyles@npm:2.20.0"
-  peerDependencies:
-    "@react-native/normalize-colors": "*"
-    react: "*"
-    react-native: "*"
-    react-native-macos: "*"
-    react-native-web: "*"
-    react-native-windows: "*"
-  peerDependenciesMeta:
-    react-native-macos:
-      optional: true
-    react-native-web:
-      optional: true
-    react-native-windows:
-      optional: true
-  checksum: a3f6a05df6b4f6d1cf09e4d4d7e0795ffe71ee2ed32549c30a2d1e3cc8d4402059d1c85ef523cb73f8365590f8a69afedfaf4ed4e546ff94f0b2a8fbe6ed8b7b
   languageName: node
   linkType: hard
 
