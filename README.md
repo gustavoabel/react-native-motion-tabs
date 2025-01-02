@@ -125,6 +125,8 @@ cd ..
 ## Usage
 
 ```typescript
+import { View } from 'react-native';
+
 import { createMotionTabs } from 'react-native-motion-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 
