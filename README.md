@@ -11,6 +11,9 @@ Perfect for apps that want to:
 
 Powered by React Native Reanimated, it provides butter-smooth animations while maintaining 60 FPS. The library seamlessly integrates with React Navigation's ecosystem while adding a layer of motion and interactivity that makes your app feel more dynamic and responsive.
 
+## 📸 How it looks
+https://github.com/user-attachments/assets/3b37176b-0ba3-43f7-b1e0-513fb514e825
+
 ## Features
 
 - Pre-configured smooth animations
