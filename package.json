@@ -1,6 +1,6 @@
 {
   "name": "react-native-motion-tabs",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A lightweight, customizable animated bottom tabs navigator for React Native. Built on top of React Navigation, it provides smooth animations, icon customization, and an intuitive API for creating beautiful tab bars with minimal setup.",
   "source": "./src/index.tsx",
   "main": "lib/commonjs/index",
